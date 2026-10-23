@@ -1,7 +1,7 @@
-import type { AstroIntegrationLogger } from "astro";
 import { createHash } from "node:crypto";
 import { readdir, readFile, rename, writeFile } from "node:fs/promises";
 import path from "node:path";
+import type { AstroIntegrationLogger } from "astro";
 import { IMAGE_EXTENSIONS, REFERENCE_EXTENSIONS } from "./file-extensions.js";
 
 async function walk(directory: string): Promise<string[]> {
