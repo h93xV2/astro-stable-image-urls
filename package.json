@@ -38,7 +38,7 @@
         "setup": "husky",
         "test": "bun test",
         "test:integration": "bun test tests/integration",
-    "test:package": "bun run build && bun test tests/package",
+        "test:package": "bun run build && bun test tests/package",
         "typecheck": "tsc --noEmit",
         "format": "biome format --write .",
         "format:check": "biome format .",
