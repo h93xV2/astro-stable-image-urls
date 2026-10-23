@@ -1,17 +1,17 @@
+import { afterEach, describe, expect, it, mock } from "bun:test";
+import { createHash } from "node:crypto";
 import {
-    mkdtemp,
     mkdir,
-    readFile,
+    mkdtemp,
     readdir,
+    readFile,
     rm,
     writeFile,
 } from "node:fs/promises";
-import { createHash } from "node:crypto";
 import os from "node:os";
 import path from "node:path";
 import { pathToFileURL } from "node:url";
 import type { AstroIntegrationLogger } from "astro";
-import { afterEach, describe, expect, it, mock } from "bun:test";
 import stableImageUrls from "../../src/index";
 
 const temporaryDirectories: string[] = [];

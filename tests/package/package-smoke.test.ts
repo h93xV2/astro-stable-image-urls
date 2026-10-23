@@ -24,6 +24,8 @@ test("imports the packed package and exposes an Astro build hook", () => {
     );
 
     try {
+        run(bun, ["run", "build"], projectDirectory);
+
         const packDirectory = path.join(directory, "pack");
         const unpackDirectory = path.join(directory, "unpack");
         mkdirSync(packDirectory);
