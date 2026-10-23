@@ -22,6 +22,8 @@ export default defineConfig({
 
 After a production build, the integration renames image files in `dist/_astro` using a SHA-256 digest of their emitted bytes, then updates references in generated HTML, CSS, JavaScript, JSON, and XML. Identical emitted image bytes produce the same filename across builds; changed bytes produce a new filename.
 
+Astro also generates hashed filenames for processed assets, but its hashes are determined by Astro's build pipeline and may change across Astro versions or build changes even when the source image is unchanged. This integration bases filenames on the final emitted image bytes, so its stability guarantee applies when those bytes are identical.
+
 Astro copies files from `public/` without processing them, so those files keep their source filenames. This integration targets images emitted to `/_astro`.
 
 ## Notes
