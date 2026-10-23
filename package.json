@@ -1,7 +1,7 @@
 {
     "name": "astro-stable-image-urls",
     "type": "module",
-    "version": "1.0.0",
+    "version": "1.0.1",
     "description": "Give Astro image assets stable, content-derived URLs across builds.",
     "license": "MIT",
     "keywords": [
