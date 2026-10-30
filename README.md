@@ -16,7 +16,7 @@ import { defineConfig } from "astro/config";
 import stableImageUrls from "astro-stable-image-urls";
 
 export default defineConfig({
-  integrations: [stableImageUrls()],
+    integrations: [stableImageUrls()],
 });
 ```
 
